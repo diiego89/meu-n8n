@@ -1,8 +1,6 @@
 FROM n8nio/n8n:latest
 
-WORKDIR /data
+ENV N8N_HOST=0.0.0.0
 
-ENV N8N_PORT=$PORT
-ENV WEBHOOK_URL=${RENDER_EXTERNAL_URL}
 
-CMD ["n8n"]
+CMD ["n8n", "start"]
