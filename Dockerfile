@@ -1,6 +1,3 @@
-FROM n8nio/n8n:latest
+FROM n8nio/n8n:1.81.1
 
-ENV N8N_HOST=0.0.0.0
-
-
-CMD ["n8n", "start"]
+CMD ["n8n"]
